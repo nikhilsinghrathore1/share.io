@@ -2,7 +2,6 @@ import { io } from 'socket.io-client'
 import './App.css'
 import { useEffect, useState } from 'react'
 import Editor from '@monaco-editor/react';
-import { SocketBlockSubscriber } from 'ethers';
 
 
 // now the first thing i need to do is that after this i need to see how many users are there in my room  
@@ -23,7 +22,7 @@ const [users, setusers] = useState([])
 
 useEffect(()=>{
   socket.on("userJoined",(user)=>{
-    
+
     console.log("socket called")
     console.log(user)
     setusers(user)
