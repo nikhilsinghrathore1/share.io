@@ -10,7 +10,7 @@ import Editor from '@monaco-editor/react';
 
 function App() {
 
-const socket = io("http://localhost:3000")
+const socket = io("https://share-io.onrender.com")
 
 const [joined, setjoined] = useState(false)
 const [roomId, setroomId] = useState("")
